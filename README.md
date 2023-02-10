@@ -6,11 +6,11 @@ import requests
 file_path = "README.md"
 
 # enter your API token generated from Github
-token = input("Please enter your Github token: ")
+token = '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'
 key = Github(token)
 
 # repository format: author/project
-repo = key.get_repo("18520339/facebook-data-extraction")
+repo = key.get_repo("aira0405/helloworld")
 file = repo.get_contents(file_path, ref="master")
 
 # decode the content in utf-8
